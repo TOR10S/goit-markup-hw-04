@@ -61,6 +61,15 @@ span {
 
 .hero-section {
     background-color: #2E2F42;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+    url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .our-team-section {
@@ -128,6 +137,7 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .our-portfolio-section-header {
@@ -194,7 +204,6 @@ span {
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 496px;
-    margin-top: 48px;
     margin-left:  auto;
     margin-right:  auto;
 }
@@ -215,6 +224,9 @@ span {
     margin-left:  auto;
     margin-right: auto;
     margin-top: 48px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-section-button:hover {
@@ -346,4 +358,145 @@ span {
 
 .address-info {
     margin-left: auto;
+}
+
+.icon-list {
+    display: flex;
+    gap: 16px;
+}
+
+.icon-item {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-icon {
+    fill: transparent;
+    stroke: #ffffff;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    background-color: #31D0AA;
+}
+
+.icon-list-team {
+    display: flex;
+    gap: 24px;
+}
+
+.icon-item-team {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+.icon-link-team {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-icon-team {
+    fill: transparent;
+    stroke: #ffffff;
+}
+
+.icon-link-team:hover,
+.icon-link-team:focus {
+    background-color: #404BBF;
+}
+
+.line {
+    position: relative;
+    color: #404BBF;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99; 
+    margin-bottom: 8px;
+}
+
+.icon-advantages {
+    position: absolute; 
+    left: center; 
+    top: center;
+}
+
+.our-portfolio-section-wraper {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-portfolio-section-li:hover .portfolio-cover-text {
+    transform: translateY(0);
+}
+
+.portfolio-cover-text {
+    position: absolute;
+    top: 0;
+    background-color: #4D5AE5;
+    height: 100%;
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.24;
+    letter-spacing: 0.02em;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transform: translateY(100%);
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 16px;
+}
+
+.social-links-paragraf {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    max-width: 264px;
+    margin-bottom: 16px;
+}
+
+.footer-container {
+    margin-right: 120px;
+}
+
+.footer-main-container {
+    display: flex;
+    align-items: baseline;
 }
